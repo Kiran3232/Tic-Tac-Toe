@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+}
+
+.h-90{
+    height: 90%;
+}
+
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+p {
+    font-size: 40px;
+}
+
+.col-height {
+    height: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+    .col-height {
+        height: 150px;
+    }
+}

@@ -1,0 +1,17 @@
+<div class="h-90">
+    <div class="row text-center h-100 bg-dark text-white">
+        <h1 class="col-12 my-auto">Player {{ currentPlayer ? 'X' : 'O' }}'s Turn</h1>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 my-auto">
+            <div class="row text-center">
+                <div class="col-4 border col-height" *ngFor="let element of elements; let i = index"
+                    (click)="placeElementAt(i)">
+                    <div class="d-flex h-100">
+                        <p class="my-auto mx-auto">{{ element }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>

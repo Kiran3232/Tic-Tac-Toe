@@ -1,0 +1,17 @@
+<div class="h-90">
+    <div class="row h-100 text-center bg-dark text-white">
+        <h2 class="col-12 my-auto">Make Your Move</h2>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 my-auto">
+            <div class="row text-center">
+                <div class="col-4 border col-height" *ngFor="let element of elements; let i = index"
+                    (click)="placeElementAt(i)">
+                    <div class="d-flex h-100">
+                        <p class="my-auto mx-auto">{{ element }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>
