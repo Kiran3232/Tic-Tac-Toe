@@ -38,7 +38,14 @@ export class MultiplayerLocalComponent implements OnInit {
     else {
       alert('Cannot Place Here');
     }
-    if (this.winner !== '') {
+    if ((this.winner === '') && (this.elements.indexOf(' ') === -1)) {
+      setTimeout(() => {
+        alert('The Match Ended In A Draw');
+        this.elements = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+        this.winner = '';
+      }, 200)
+    }
+    else if ((this.winner !== '')) {
       setTimeout(() => {
         alert(this.winner + ' wins');
         this.elements = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
